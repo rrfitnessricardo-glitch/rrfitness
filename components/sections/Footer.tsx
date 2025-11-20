@@ -2,6 +2,7 @@
 
 import { Instagram, Facebook, ArrowUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { assetPath } from "@/lib/utils"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -38,7 +39,7 @@ export default function Footer() {
             <div className="space-y-6 animate-fade-in-up">
               <div className="flex items-center justify-center space-x-3">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center">
-                  <img src="/logo.jpg" alt="RR.Fitness Logo" className="object-contain" />
+                  <img src={assetPath("/logo.jpg")} alt="RR.Fitness Logo" className="object-contain" />
                 </div>
                 <div className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white">RR.FITNESS</div>
               </div>

@@ -77,7 +77,7 @@ export default function Hero() {
           <div className="relative w-[80vw] h-[70vh] rounded-xl overflow-hidden">
             <video
               ref={videoRef}
-              src="/rrVideo.mp4"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || '/rrfitness'}/rrVideo.mp4`}
               autoPlay
               muted={isMuted}
               playsInline
@@ -102,7 +102,7 @@ export default function Hero() {
           {/* Imagen RicardoHero - responsiva y contenida 
           <div className="absolute bottom-0 right-0 w-[min(500px,40vw)] max-h-[80vh] z-0 pointer-events-none select-none opacity-100">
             <img
-              src="/RicardoHero.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || '/rrfitness'}/RicardoHero.png`}
               alt="Ricardo Hero"
               className="w-full h-full object-contain"
               draggable="false"

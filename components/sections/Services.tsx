@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Stars, Users, Map, Star, ArrowRight } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { assetPath } from "@/lib/utils"
 
 export default function Services() {
   const services = [
@@ -208,13 +209,13 @@ export default function Services() {
                             <div className="w-full flex items-center justify-center p-4">
                               {service.modalContent.mediaType === "video" ? (
                                 <video
-                                  src={service.modalContent.media}
+                                  src={assetPath(service.modalContent.media)}
                                   controls
                                   className="w-full h-auto max-h-[50vh] rounded-lg border border-gray-200 dark:border-gray-700 object-contain"
                                 />
                               ) : (
                                 <img
-                                  src={service.modalContent.media}
+                                  src={assetPath(service.modalContent.media)}
                                   alt={service.title}
                                   className="w-full h-auto max-h-[50vh] rounded-lg border border-gray-200 dark:border-gray-700 object-contain"
                                 />

@@ -11,10 +11,11 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/rrfitness'
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo.jpg" type="image/jpeg" />
+        <link rel="icon" href={`${basePath}/logo.jpg`} type="image/jpeg" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

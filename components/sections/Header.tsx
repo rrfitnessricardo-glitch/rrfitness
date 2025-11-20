@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Sun, Moon, Dumbbell, Home, Briefcase, Trophy, Mail, Target } from "lucide-react"
 import { useTheme } from "next-themes"
+import { assetPath } from "@/lib/utils"
 import {
   Sidebar,
   SidebarContent,
@@ -85,7 +86,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
         <SidebarHeader className="border-b border-gray-200 dark:border-gray-700 p-6 group-data-[collapsible=icon]:p-3">
           <div className="flex items-center justify-center space-x-3 cursor-pointer group" onClick={() => handleNavClick("#inicio")}>
             <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shrink-0 bg-white dark:bg-gray-800 shadow-sm">
-              <img src="/logo.jpg" alt="" className="rounded-lg w-full h-full object-cover object-center" />
+              <img src={assetPath("/logo.jpg")} alt="" className="rounded-lg w-full h-full object-cover object-center" />
             </div>
             <div className="text-xl font-black text-gray-900 dark:text-white group-data-[collapsible=icon]:hidden">
               RR.FITNESS
