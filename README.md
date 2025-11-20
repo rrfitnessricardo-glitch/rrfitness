@@ -35,7 +35,7 @@ Esta página está configurada para desplegarse automáticamente en GitHub Pages
 
 5. **¡Listo!** 🎉
    - Cada vez que hagas `git push`, GitHub Actions construirá y desplegará tu página automáticamente
-   - Tu página estará disponible en: `https://TU_USUARIO.github.io/TU_REPOSITORIO`
+   - Tu página estará disponible en: `https://rrfitnessricardo-glitch.github.io/rrfitness`
 
 ### Desarrollo Local
 
