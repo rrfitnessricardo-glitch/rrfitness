@@ -10,6 +10,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export', // ⬅️ Esta línea es clave para exportar a carpeta "out"
+  basePath: '/rrfitness', // ⬅️ Base path para GitHub Pages
+  assetPrefix: '/rrfitness', // ⬅️ Prefijo para assets (CSS, JS, imágenes)
 }
 
 export default nextConfig
